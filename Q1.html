@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q1</title>
+</head>
+
+<body>
+    <div class="menu">
+        <img src="logo.png" alt="" width="270px">
+    </div>
+    <div class="container">
+        <div id="titulo">
+            <h3>To Do <br> List <br> </h3>
+            <button> <a href="#data"> Data: </a></button>
+            <button id="bt1"> <a href="#texto">Crie a sua aqui</a></button>
+        </div>
+        <h3> Quinta-feira </h3>
+    </div>
+    <div class="parte-lista">
+        <div class="container2">
+            <h1 class="subtitulo"> Adicionar Elementos na Lista</h1>
+            <input type="text" class="nome" placeholder="Seu nome">
+            <input type="text" placeholder="Digite uma tarefa">
+            <input type="text" class="nome" placeholder="Digite seu sobrenome">
+            <h3> Data: </h3>
+            <button onclick="adicionar()"> + </button>
+            <button onclick="remover()"> - </button>
+        </div>
+        <div id="tarefas">
+        </div>
+    </div>
+
+    <script>
+        //Q1
+        const h3 = document.getElementsByTagName("h3");
+        const terceiroH3 = h3[2];
+        terceiroH3.style.fontSize = "50px";
+        terceiroH3.style.fontFamily = "Arial";
+
+        //Q2
+        const h1 = document.getElementsByTagName('h1');
+        const primeiroh1 = h1[0];
+        primeiroh1.innerHTML = "Adicionar tarefas na lista";
+
+        const h3Elements = document.getElementsByTagName('h3');
+        const segundah3v = h3Elements[1];
+        segundah3v.innerHTML = 'teste';
+        //Q3
+    </script>
+</body>
+
+</html>
